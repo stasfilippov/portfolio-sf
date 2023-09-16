@@ -1,9 +1,12 @@
 export const Theme = {
 	colors: {
-		primary: '#000',
-		second: '#ABB3BA',
-		bgColorBtnPrimary: '#4E71FE',
-		colorBtnPrimary: '#FFFFFF',
-		bgColorBtnHover: '#1640f8',
+		navLinks: '#000',
+		hoverLinks: '#FF6464',
+		primary: '#21243D',
+		secondary: '#8695A4',
+		bgButton: '#FF6464',
+		bgButtonHover: '#fd4f4f',
+		textButton: '#fff',
+		bgSectionPosts: '#EDF7FA'
 	},
 }
