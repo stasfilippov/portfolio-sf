@@ -7,6 +7,8 @@ export const Theme = {
 		bgButton: '#FF6464',
 		bgButtonHover: '#fd4f4f',
 		textButton: '#fff',
-		bgSectionPosts: '#EDF7FA'
+		bgSectionPosts: '#EDF7FA',
+		bgPost: '#fff',
+		linkPostSection: '#00A8CC'
 	},
 }

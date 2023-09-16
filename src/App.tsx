@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
+import HeaderSection from "./components/HeaderSection";
 import Navbar from "./components/Navbar";
 import {StyledInner, StyledWrapper} from "./styles/components/Wrapper.styled";
+import PostsSection from "./components/PostsSection";
 
 
 function App() {
@@ -11,9 +12,10 @@ function App() {
 			<StyledWrapper>
 				<Navbar/>
 				<StyledInner>
-					<Header></Header>
+					<HeaderSection/>
 				</StyledInner>
 			</StyledWrapper>
+			<PostsSection/>
 		</div>
 	);
 }

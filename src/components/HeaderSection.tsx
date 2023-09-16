@@ -4,23 +4,23 @@ import {StyledDescription, StyledTitle} from "../styles/components/Title.styled"
 import {StyledButtonDownload} from "../styles/components/ButtonDownload.styled";
 import Myphoto from '../images/Myphoto.jpeg'
 import {Theme} from "../styles/Thems.styled";
-const Header = () => {
+const HeaderSection = () => {
 	return (
 		<StyledHeaderSection>
 			<StyledHeaderDescription>
 				<HeaderTitle fontSize={'44px'}>Hi, I am Stas, Frontend Developer</HeaderTitle>
 				<HeaderDescription fontSize={'16px'}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</HeaderDescription>
-				<StyledButtonDownload borderRadius={'2px'}>Download Resume</StyledButtonDownload>
+				<HeaderButton borderRadius={'2px'} >Download Resume</HeaderButton>
 			</StyledHeaderDescription>
 			<HeaderImages>
 				<div></div>
-				<img src={Myphoto} alt=""/>
+				<img src={Myphoto} alt="My photo"/>
 			</HeaderImages>
 		</StyledHeaderSection>
 	)
 }
 
-export default Header;
+export default HeaderSection;
 
 
 const StyledHeaderSection = styled.section `
@@ -39,6 +39,9 @@ const HeaderTitle = styled(StyledTitle) `
 
 const HeaderDescription = styled(StyledDescription) `
 	margin-bottom: 38px;
+`
+const HeaderButton = styled(StyledButtonDownload) `
+	margin-bottom: 71px;
 `
 
 const HeaderImages = styled.div `

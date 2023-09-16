@@ -4,7 +4,10 @@ import {Theme} from "../Thems.styled";
 type StyledButtonDownloadPropsType = {
 	borderRadius?: string
 }
-export const StyledButtonDownload = styled.a <StyledButtonDownloadPropsType>`
+export const StyledButtonDownload = styled.a.attrs((props) => ({
+	href: props.href || '#',
+	download: 'my_resume'
+})) <StyledButtonDownloadPropsType>`
   display: flex;
   align-items: center;
   max-width: 208px;

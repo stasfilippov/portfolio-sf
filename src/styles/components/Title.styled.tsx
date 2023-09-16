@@ -19,3 +19,19 @@ export const StyledDescription = styled.p <TitleStyledPropsType> `
   font-weight: 400;
   line-height: normal;
 `
+
+export const StyledTitleSections = styled.h2 <TitleStyledPropsType>`
+  color: ${Theme.colors.primary};
+  font-size: ${props => props.fontSize};
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 272.727% */
+`
+
+export const StyledTitlePost = styled.h2 <TitleStyledPropsType> `
+  color: ${Theme.colors.primary};
+  font-size: ${props => props.fontSize};
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`
