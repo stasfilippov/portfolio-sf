@@ -5,7 +5,7 @@ export const Theme = {
 		primary: '#21243D',
 		secondary: '#8695A4',
 		bgButton: '#FF6464',
-		bgButtonHover: '#fd4f4f',
+		bgButtonHover: '#ff4444',
 		textButton: '#fff',
 		bgSectionPosts: '#EDF7FA',
 		bgPost: '#fff',

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import HeaderSection from "./components/HeaderSection";
+import MainSection from "./layout/main/MainSection";
 import Navbar from "./components/Navbar";
 import {StyledInner, StyledWrapper} from "./styles/components/Wrapper.styled";
-import PostsSection from "./components/PostsSection";
+import PostsSection from "./layout/posts/PostsSection";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 			<StyledWrapper>
 				<Navbar/>
 				<StyledInner>
-					<HeaderSection/>
+					<MainSection/>
 				</StyledInner>
 			</StyledWrapper>
 			<PostsSection/>

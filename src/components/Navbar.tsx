@@ -4,23 +4,25 @@ import {Theme} from "../styles/Thems.styled";
 
 const Navbar = () => {
 	return (
-		<StyledNav>
-			<li>
-				<a href="#">Works</a>
-			</li>
-			<li>
-				<a href="#">Blog</a>
-			</li>
-			<li>
-				<a href="#">Contact</a>
-			</li>
-		</StyledNav>
+		<nav>
+			<StyledMenu>
+				<li>
+					<a href="#">Works</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</StyledMenu>
+		</nav>
 	)
 }
 
 export default Navbar;
 
-const StyledNav = styled.nav `
+const StyledMenu = styled.nav `
   list-style: none;
   display: flex;
   justify-content: flex-end;

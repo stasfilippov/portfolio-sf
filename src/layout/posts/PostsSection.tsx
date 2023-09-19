@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import {Theme} from "../styles/Thems.styled";
-import {StyledInner} from "../styles/components/Wrapper.styled";
-import {StyledTitleSections} from "../styles/components/Title.styled";
-import Post from "./Post";
+import {Theme} from "../../styles/Thems.styled";
+import {StyledInner} from "../../styles/components/Wrapper.styled";
+import {StyledTitleSections} from "../../styles/components/Title.styled";
+import Post from "../../components/Post";
 
 const PostsSection = () => {
 
