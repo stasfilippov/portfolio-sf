@@ -1,26 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import {Theme} from "../styles/Thems.styled";
+import {Theme} from "../../styles/Thems.styled";
 
-const Navbar = () => {
+const Header = () => {
 	return (
-		<nav>
-			<StyledMenu>
-				<li>
-					<a href="#">Works</a>
-				</li>
-				<li>
-					<a href="#">Blog</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</StyledMenu>
-		</nav>
+		<header>
+			<nav>
+				<StyledMenu>
+					<li>
+						<a href="#">Works</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</StyledMenu>
+			</nav>
+		</header>
 	)
 }
 
-export default Navbar;
+export default Header;
 
 const StyledMenu = styled.nav `
   list-style: none;

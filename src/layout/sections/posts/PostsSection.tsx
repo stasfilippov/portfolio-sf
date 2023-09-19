@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import {Theme} from "../../styles/Thems.styled";
-import {StyledInner} from "../../styles/components/Wrapper.styled";
-import {StyledTitleSections} from "../../styles/components/Title.styled";
-import Post from "../../components/Post";
+import {Theme} from "../../../styles/Thems.styled";
+import {StyledInner} from "../../../styles/components/Wrapper.styled";
+import {StyledSectionTitle, StyledSubtitle} from "../../../styles/components/Title.styled";
+import Post from "../../../components/Post";
 
 const PostsSection = () => {
 
@@ -11,7 +11,7 @@ const PostsSection = () => {
 		<StyledPostsSection>
 			<StyledInner>
 				<StyledPostsSectionTop>
-					<StyledTitleSections fontSize={'22px'}>Recent posts</StyledTitleSections>
+					<StyledSectionTitle fontSize={'22px'}>Recent posts</StyledSectionTitle>
 					<StyledPostsSectionLink href={'#'}>View all</StyledPostsSectionLink>
 				</StyledPostsSectionTop>
 				<StyledPostsSectionContent>
