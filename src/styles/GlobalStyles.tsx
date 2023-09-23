@@ -12,6 +12,9 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  ul {
+    list-style: none;
+  }
   body {
     height: 100vh;
     margin: 0;

@@ -4,9 +4,10 @@ import {StyledDescription, StyledTitle, StyledSubtitle} from "../../../styles/co
 import {StyledButtonDownload} from "../../../styles/components/ButtonDownload.styled";
 import Myphoto from '../../../assets/images/Myphoto.jpeg'
 import {Theme} from "../../../styles/Thems.styled";
+import {FlexWrapper} from "../../../styles/components/FlexWrapper.styled";
 const MainSection = () => {
 	return (
-		<StyledMainSection>
+		<FlexWrapper as={'section'} justify={'space-between'}>
 			<StyledMainDescription>
 				<StyledSubtitle fontSize = {'44px'} fontWeight = {'700'}>Hi, I am Stanislav Filippov,</StyledSubtitle>
 				<MainTitle fontSize={'44px'}> Frontend Developer</MainTitle>
@@ -14,20 +15,14 @@ const MainSection = () => {
 				<MainButton borderRadius={'2px'} >Download Resume</MainButton>
 			</StyledMainDescription>
 			<MainImages>
-				<div></div>
 				<img src={Myphoto} alt="My photo"/>
 			</MainImages>
-		</StyledMainSection>
+		</FlexWrapper>
 	)
 }
 
 export default MainSection;
 
-
-const StyledMainSection = styled.section `
-  display: flex;
-  justify-content: space-between;
-`
 
 const StyledMainDescription = styled.div `
 	max-width: 522px;
@@ -52,7 +47,8 @@ const MainImages = styled.div `
   border-radius: 50%;
   position: relative;
   
-  div {
+  &::after {
+    content: '';
     position: absolute;
     z-index: -1;
     left: -5px;

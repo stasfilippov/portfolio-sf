@@ -9,6 +9,7 @@ export const Theme = {
 		textButton: '#fff',
 		bgSectionPosts: '#EDF7FA',
 		bgPost: '#fff',
-		linkPostSection: '#00A8CC'
+		linkPostSection: '#00A8CC',
+		tag: '#8695A4'
 	},
 }

@@ -24,7 +24,7 @@ const Header = () => {
 
 export default Header;
 
-const StyledMenu = styled.nav `
+const StyledMenu = styled.ul `
   list-style: none;
   display: flex;
   justify-content: flex-end;
