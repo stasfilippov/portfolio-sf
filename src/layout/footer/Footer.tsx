@@ -46,5 +46,9 @@ const StyledFooterList = styled(FlexWrapper)`
 `
 
 const StyledCopyright = styled.small `
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `
 export default Footer;
