@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Theme} from "../styles/Thems.styled";
+import {Theme} from "../../styles/Thems.styled";
 
 
 const HeaderMenu = (props: { menuItems: Array<string> }) => {
@@ -8,9 +8,17 @@ const HeaderMenu = (props: { menuItems: Array<string> }) => {
 		<StyledMenu>
 			{props.menuItems.map((el, index) => {
 				return (
-					<li key={index}>
-						<a href="#">{el}</a>
-					</li>
+					<ListItem key={index}>
+						<Link href="#">
+							{el}
+							<Mask>
+								<span>{el}</span>
+							</Mask>
+							<Mask>
+								<span>{el}</span>
+							</Mask>
+						</Link>
+					</ListItem>
 				)
 			})}
 
@@ -24,14 +32,32 @@ const StyledMenu = styled.ul`
   display: flex;
   justify-content: flex-end;
   gap: 33px;
+  margin-bottom: 140px;
+
+`
+
+const ListItem = styled.li`
+  position: relative;
+`
+
+const Link = styled.a`
   color: ${Theme.colors.navLinks};
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 140px;
+`
 
-  li:hover {
+const Mask = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 50%;
+  overflow: hidden;
+  outline: 1px solid red;
+
+  &:hover {
     color: ${Theme.colors.hoverLinks};
   }
 `

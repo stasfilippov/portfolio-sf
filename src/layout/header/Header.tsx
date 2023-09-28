@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeaderMenu from "../../components/HeaderMenu";
+import HeaderMenu from "../../components/headerMenu/HeaderMenu";
 
 const items = ['Works', 'Blog', 'Contact']
 
