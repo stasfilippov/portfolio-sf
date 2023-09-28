@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {Theme} from "../Thems.styled";
-import exp from "constants";
 
 type TitleStyledPropsType = {
 	fontSize: string,
@@ -22,7 +21,7 @@ export const StyledSubtitle = styled.h2 <TitleStyledPropsType>`
   line-height: 60px; /* 272.727% */
 `
 
-export const StyledTitlePost = styled.h2 <TitleStyledPropsType> `
+export const StyledTitlePost = styled.h2 <TitleStyledPropsType>`
   color: ${Theme.colors.primary};
   font-size: ${props => props.fontSize};
   font-style: normal;
@@ -38,7 +37,7 @@ export const StyledSectionTitle = styled.h3 <TitleStyledPropsType>`
   line-height: 60px; /* 272.727% */
 `
 
-export const StyledDescription = styled.p <TitleStyledPropsType> `
+export const StyledDescription = styled.p <TitleStyledPropsType>`
   color: ${Theme.colors.primary};
   font-size: ${props => props.fontSize};
   font-style: normal;
