@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {Theme} from "./Thems.styled";
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -21,8 +22,13 @@ export const GlobalStyled = createGlobalStyle`
   body {
     height: 100vh;
     margin: 0;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: ${Theme.colors.primary};
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 `

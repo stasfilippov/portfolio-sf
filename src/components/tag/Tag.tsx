@@ -13,14 +13,9 @@ const Tag = (props: TagPropsType) => {
 	);
 };
 
-type StyledTagPropsType = {
-}
 
-const StyledTag = styled.span <StyledTagPropsType>`
+const StyledTag = styled.span`
   color: ${Theme.colors.tag};
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 `
 export default Tag;

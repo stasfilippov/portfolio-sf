@@ -11,12 +11,6 @@ const HeaderMenu = (props: { menuItems: Array<string> }) => {
 					<ListItem key={index}>
 						<Link href="#">
 							{el}
-							<Mask>
-								<span>{el}</span>
-							</Mask>
-							<Mask>
-								<span>{el}</span>
-							</Mask>
 						</Link>
 					</ListItem>
 				)
@@ -43,19 +37,7 @@ const ListItem = styled.li`
 const Link = styled.a`
   color: ${Theme.colors.navLinks};
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
-`
-
-const Mask = styled.span`
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  height: 50%;
-  overflow: hidden;
-  outline: 1px solid red;
 
   &:hover {
     color: ${Theme.colors.hoverLinks};

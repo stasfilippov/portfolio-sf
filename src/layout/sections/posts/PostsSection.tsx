@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {Theme} from "../../../styles/Thems.styled";
 import {StyledInner} from "../../../styles/components/Wrapper.styled";
-import {StyledSectionTitle, StyledSubtitle} from "../../../styles/components/Title.styled";
 import Post from "../../../components/post/Post";
 import {FlexWrapper} from "../../../styles/components/FlexWrapper.styled";
 
@@ -12,7 +11,7 @@ const PostsSection = () => {
 		<StyledPostsSection>
 			<StyledInner>
 				<FlexWrapper justify={'space-between'} align={'center'}>
-					<StyledSectionTitle fontSize={'22px'}>Recent posts</StyledSectionTitle>
+					<PostsSectionTitle>Recent posts</PostsSectionTitle>
 					<StyledPostsSectionLink href={'#'}>View all</StyledPostsSectionLink>
 				</FlexWrapper>
 				<FlexWrapper gap={'20px'}>
@@ -36,18 +35,24 @@ const PostsSection = () => {
 
 export default PostsSection;
 
-const StyledPostsSection = styled.section `
+const PostsSectionTitle = styled.h3`
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+`
+
+const StyledPostsSection = styled.section`
   background-color: ${Theme.colors.bgSectionPosts};
   padding: 7px 0 32px 0;
 `
 
-const StyledPostsSectionLink = styled.a `
+const StyledPostsSectionLink = styled.a`
   color: ${Theme.colors.linkPostSection};
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
+
   &:hover {
     text-decoration: underline;
   }

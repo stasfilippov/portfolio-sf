@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyledSectionTitle} from "../../../styles/components/Title.styled";
 import Project from "../../../components/project/Project";
 import Project_1 from '../../../assets/images/project_1.png'
 import Project_2 from '../../../assets/images/project_2.png'
@@ -9,7 +8,7 @@ import styled from "styled-components";
 const WorksSection = () => {
 	return (
 		<StyledWorksSection>
-			<StyledSectionTitle fontSize={'22px'}>Featured works</StyledSectionTitle>
+			<WorksSectionTitle>Featured works</WorksSectionTitle>
 			<Project
 				image={Project_1}
 				title={'Designing Dashboards'}
@@ -37,8 +36,14 @@ const WorksSection = () => {
 	);
 };
 
-const StyledWorksSection = styled.section `
-	margin-bottom: 53px;
+const StyledWorksSection = styled.section`
+  margin-bottom: 53px;
 `
+const WorksSectionTitle = styled.h3`
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+`
+
 export default WorksSection;
 
